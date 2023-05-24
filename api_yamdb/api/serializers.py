@@ -59,11 +59,11 @@ class SignUpSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 'Имя пользователя не может быть "me"'
             )
-        elif User.objects.filter(username=value).exists():
+        if User.objects.filter(username=value).exists():
             raise serializers.ValidationError(
                 'Пользователь уже есть'
             )
-        elif not reg.match(value):
+        if not reg.match(value):
             raise serializers.ValidationError(
                 'Имя пользователя не совпадает с паттерном'
             )
