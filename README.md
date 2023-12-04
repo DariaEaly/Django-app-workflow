@@ -1,7 +1,5 @@
-# yamdb_final
-
-yamdb_final
-
+# Django-app workflow
 ![Worlflow badge](https://github.com/dariaealy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-Развернутый проект доступен по адресу [http://158.160.25.190/api/v1/](http://158.160.25.190/api/v1/)
+C помощью workflow проект тестируется, собирается в контейнер, деплоится на сервер, после чего идет отправка уведомления об успехе в Telegram.
+
